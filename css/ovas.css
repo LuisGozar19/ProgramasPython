@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+ul{
+    list-style: none;       /*quitar viñetas · */
+}
+*{                          /*quitar margin y padding a todo*/
+    margin: 0px;
+    padding: 0px;
+}
+nav li a{
+    text-decoration: none;  /*quitar subrayado*/
+    color: #fff;
+    background-color: rgb(33, 40, 182);       /*Relleno*/
+    padding: 10px 15px;
+    display: block;         /*arreglado*/
+    border-radius: 10px;    /*Borde redondeado*/
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+    .menu{
+        float: left;        /*acomodar*/
+    }
+nav{
+    width: 900px;
+    height: 60px;
+    margin-left: auto;
+}
+    /*aplicar efecto hover */
+nav li a:hover{
+    background-color: rgb(230, 73, 1);
+}
+    /*Ocultaremos el Submenu nivel 2 y ajustaremos la posicion (absoluta) y modificaremos el ancho minimo*/
+nav li ul{
+    position: absolute;
+    min-width: 140px;
+    display: none;
+}
+    /*mostrar el sub menu nivel 2 usando hover*/
+nav li:hover >ul{
+    display: block;
+}
+.intro{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: rgb(255, 255, 160);
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+.videos{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: rgb(250, 178, 110);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
